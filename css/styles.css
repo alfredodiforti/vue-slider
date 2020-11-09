@@ -52,12 +52,13 @@ body {
     transform: translateX(-50%);
     background-color: rgba(000, 000, 000, .5);
     border-radius: 25px;
-    padding: 20px;
+    padding: 10px;
 }
 .nav i {
     font-size: 30px;
     color: rgb(255, 238, 2) ;
     cursor: pointer;
+    padding: 10px;
 }
 .nav i:hover {
     color: whitesmoke;
