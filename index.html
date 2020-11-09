@@ -17,7 +17,7 @@
         <!-- contenitore slider -->
         <div class="slider">
             <!-- freccia di sinistra -->
-            <div class="backarrow">
+            <div class="backarrow" @click='backPhoto'>
                 <i class="fas fa-arrow-circle-left"></i>
             </div>
             <!-- immagini -->
@@ -25,7 +25,7 @@
                  <img :src="photos[indexPhoto]" alt="image">
              </div>
              <!-- freccia di destra -->
-            <div class="frontarrow">
+            <div class="frontarrow" @click='nextPhoto'>
                 <i class="fas fa-arrow-circle-right"></i>
             </div>
             <!-- navigazione -->

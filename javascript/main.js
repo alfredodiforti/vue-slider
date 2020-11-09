@@ -10,7 +10,19 @@ const app = new Vue({
         ]
     },
     methods: {
-        nextPhoto()
+        nextPhoto() {
+            this.indexPhoto ++;
+            if (this.indexPhoto > (this.photos.length - 1)){
+                this.indexPhoto = 0; 
+            }
+        },
+        backPhoto() {
+            this.indexPhoto --;
+            if (this.indexPhoto < 0) {
+                this.indexPhoto = this.photos.length - 1 ;
+            }
+
+        }
 
     }
 
