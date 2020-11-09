@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- vue cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <title>vue-slider</title>
+</head>
+<body>
+    <!-- contenitore vue  -->
+    <div id="app" >
+        <!-- contenitore slider -->
+        <div class="slider">
+            <!-- freccia di sinistra -->
+            <div class="backarrow">
+                <i class="fas fa-arrow-circle-left"></i>
+            </div>
+            <!-- immagini -->
+             <div class="images" >
+                 <img :src="photos[indexPhoto]" alt="image">
+             </div>
+             <!-- freccia di destra -->
+            <div class="frontarrow">
+                <i class="fas fa-arrow-circle-right"></i>
+            </div>
+            <!-- navigazione -->
+            <div class="nav" >
+                <i class="fas fa-circle active"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </div>
+        </div>
+    </div>
+    <!-- javascript -->
+    <script src="./javascript/main.js"></script>
+    
+</body>
+</html>

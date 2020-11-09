@@ -1,0 +1,67 @@
+/* General style */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #4f4f4f;
+}
+.slider {
+    position: relative;
+}
+/* frecce */
+.slider .backarrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider .frontarrow {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+.backarrow i {
+    font-size: 60px;
+    color: rgb(255, 238, 2);
+    margin-left: 30px;
+    cursor: pointer;
+}
+.frontarrow i {
+    font-size: 60px;
+    color: rgb(255, 238, 2);
+    margin-right: 30px;
+    cursor: pointer;
+}
+/* immagine  */
+.images {
+    height: 700px;
+}
+.images img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* navigazione */
+
+.nav {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(000, 000, 000, .5);
+    border-radius: 25px;
+    padding: 20px;
+}
+.nav i {
+    font-size: 30px;
+    color: rgb(255, 238, 2) ;
+    cursor: pointer;
+}
+.nav i:hover {
+    color: whitesmoke;
+}
+.nav i.active {
+    color: tomato;
+}
